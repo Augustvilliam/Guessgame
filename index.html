@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Guess a number between 1 and 100</h1>
+        <div class="form-container">
+            <form>
+                <input id="number-input" class="number-input" type="number" min="1" max="100" required>
+                <button type="submit"  class="number-submit" value="Gissa!">Guess!</button>
+            </form>
+        </div>
+        <div class="result-container">
+            <p class="guess"></p>
+            <p class="last-result"></p>
+            <p class="low-high"></p>
+            <div class="fel"><img src="img/fel-fem-myror.gif" alt=""></div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+:root{
+    --color-white: #ffffff;
+    --color-dark: #000000;
+    --color-primary: #6366F1;
+    --color-bg:rgb(192,192,192);
+    --color-bg-secondary: #341539;
+}
+
+
+
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding:2rem;
+    background-color: var(--color-bg);
+    @media (width > 768px){
+        width:720px
+    }
+    @media (width > 1400px){
+        width: 1320px;
+    }
+
+
+}
+
+.fel{
+    display:none;
+}
+.fel-open{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+.number-submit{
+    padding: 2rem;
+
+}
+.number-input{
+    padding:2rem;
+    
+}
+
+.form-container{
+    padding:2rem;
+    background-color:var(--color-bg-secondary) ;
+}
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
