@@ -4,9 +4,24 @@
     --color-primary: #6366F1;
     --color-bg:rgb(192,192,192);
     --color-bg-secondary: #341539;
+    --border-rad: .5rem;
+    
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
+body{
+    background-color: #1b1a1aed;
+}
 
 
 
@@ -39,33 +54,60 @@
     justify-content: center;
     max-width: 400px;
     overflow: hidden;
-    border-radius: .5rem;
+    border-radius: var(--border-rad)
+}
+.rätt{
+    display:none;
+}
+.rätt-open{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: var(--border-rad)
 }
 .number-submit{
     padding: 2rem;
+    background-color: var(--color-primary);
+    border:none;
+    border-radius:0 .5rem .5rem 0;
+    font-size:32px;
+    color:var(--color-white)
 
+}
+.btn-reset{
+    margin:2rem auto;
+    display:flex;
+    padding: 2rem 4rem;
+    background-color: transparent;
+    border: none;
+    box-shadow: 1px 1px 4px 2px #10101040;
+    border-radius: var(--border-rad);    
+    color:var(--color-white)
+
+}
+.btn-reset:hover{
+    background-color: var(--color-primary);
 }
 .number-input{
     padding:2rem;
+    border-radius: .5rem 0 0 .5rem;
+    border:none;
+    font-size:32px;
     
 }
 
 .form-container{
     padding:2rem;
     background-color:var(--color-bg-secondary) ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
 }
 
 
 
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
